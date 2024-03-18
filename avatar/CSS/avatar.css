@@ -1,0 +1,100 @@
+/* Global rules  */
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: linear-gradient(to right, #01022d, #000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-image: linear-gradient(to right, #111242e5 20%, rgba(0, 0, 0, 0.434)),
+        url(/avatar/img/download.webp);
+    background-position: center;
+    width: 90%;
+    height: 600px;
+}
+
+.container:hover {
+    background-image: linear-gradient(to right, #111242e5 20%, transparent),
+        url(/avatar/img/download.webp);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.container ul {
+    /* proplem width */
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container ul a {
+    border-bottom: 2px solid transparent;
+}
+
+.container ul a:hover {
+    border-bottom: 2px solid white;
+}
+
+.landing {
+    color: white;
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.landing h2 {
+    padding-bottom: 30pxpx;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.landing p {
+    width: 400px;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+.landing button {
+    font-size: 25px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: #4c4eb686;
+    color: white;
+    cursor: pointer;
+}
+
+.landing button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
